@@ -1,0 +1,56 @@
+body{
+    padding: 5px;
+}
+.btn {
+    padding: 5px;
+}
+
+.Primary {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: rgb(95, 95, 236);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.Secondary {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.Success {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: rgb(45, 219, 45);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.Danger {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: rgb(221, 32, 32);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.Warning {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: rgb(189, 228, 16);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}

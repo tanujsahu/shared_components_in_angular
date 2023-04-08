@@ -1,0 +1,25 @@
+<table [className]="'tbl'">
+    <tr>
+        <ng-container *ngFor="let head of heading">
+            <th>{{head}}</th>
+        </ng-container>
+    </tr>
+
+    <ng-container *ngFor="let list of dataList">
+        <tr>
+            <td>{{list.company}}</td>
+            <td>{{list.contact}}</td>
+            <td>{{list.country}}</td>
+            <ng-container *ngIf="list.action">
+                <td>
+                    <span *ngIf="list.action.edit" [className]="'edit'">
+                        {{list.action.edit}}
+                    </span>
+                    <span *ngIf="list.action.delete" [className]="'delete'">
+                        {{list.action.delete}}
+                    </span>
+                </td>
+            </ng-container>
+        </tr>
+    </ng-container>
+</table>

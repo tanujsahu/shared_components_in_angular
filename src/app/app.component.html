@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+
+<h3>Card</h3>
+<app-card [items]="currentItem"></app-card>
+
+<h3>Button List</h3>
+<app-buttons [btn_text]="text" btn_type="Primary" (click)="submit()"></app-buttons>
+<app-buttons [btn_text]="'Save'" btn_type="Success"></app-buttons>
+<app-buttons [btn_text]="'Warning'" btn_type="Warning"></app-buttons>
+<app-buttons [btn_text]="text" btn_type="Danger"></app-buttons>
+
+<h3>Table</h3>
+<app-table [dataList]="dataList" [heading]="heading"></app-table>
+
+<h3>Toaster</h3>
+<app-buttons [btn_text]="'Toaster'" btn_type="Primary" (click)="toaster_call_fn()">
+</app-buttons>
+<app-toaster *ngIf="toaster_call" [message]="message" [toaster_type]="toaster_type"
+    [toaster_duation]="toaster_duation"></app-toaster>
